@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            const string FITXER_BONUS = "bonus.txt";
+            StreamReader strBonus = new StreamReader(FITXER_BONUS);
         }
     }
 }

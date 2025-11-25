@@ -6,7 +6,7 @@
         {
             int contador = 0;
             
-            for (int i = 0; i <= 300; i++)
+            for (int i = 1; i <= 300; i++)
             {
                 if (i % 4 == 0)
                 {
@@ -22,7 +22,7 @@
                 }
             }
 
-            Console.WriteLine("Fi del programa.");
+            Console.WriteLine("Fin del programa");
         }
     }
 }

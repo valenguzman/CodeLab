@@ -1,10 +1,10 @@
-﻿namespace EX13
+﻿namespace EX11
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            const string FITXER_GIRONA = "Girona lliga23_24_v2.txt";
+            const string FITXER_GIRONA = "Girona lliga23_24.txt";
             StreamReader fitxerGirona = new StreamReader(FITXER_GIRONA);
 
             int victories = 0;
@@ -12,17 +12,16 @@
             int derrotes = 0;
             int puntsTotals = 0;
 
-            // Leer número de jornadas
-            int totalJornades = Convert.ToInt32(fitxerGirona.ReadLine());
+            string lineaActual = fitxerGirona.ReadLine(); //Leemos la primera linea.
 
-            // Con un for que recorra cada jornada
-            for (int i = 0; i < totalJornades; i++)
+            while (lineaActual != null)
             {
-                // Leer goles rival
-                int golsRival = Convert.ToInt32(fitxerGirona.ReadLine());
+                int golsRival = Convert.ToInt32(lineaActual); //Convertimos la primera linea.
 
-                // Leer goles Girona
-                int golsGirona = Convert.ToInt32(fitxerGirona.ReadLine());
+                
+                lineaActual = fitxerGirona.ReadLine(); //Leemos la segunda linea.
+
+                int golsGirona = Convert.ToInt32(lineaActual); //Convertimos la segunda linea.
 
                 // Comparar resultados
                 if (golsGirona > golsRival)
@@ -39,6 +38,9 @@
                 {
                     derrotes++;
                 }
+
+                // Leer la siguiente línea del rival
+                lineaActual = fitxerGirona.ReadLine();
             }
 
             fitxerGirona.Close();
@@ -47,8 +49,6 @@
             Console.WriteLine($"Partits empatats: {empats}");
             Console.WriteLine($"Partits perduts: {derrotes}");
             Console.WriteLine($"Total de punts obtinguts: {puntsTotals}");
-
-
         }
     }
 }
