@@ -1,0 +1,13 @@
+<Solution>
+  <Project Path="EX01/EX01.csproj" />
+  <Project Path="EX02/EX02.csproj" />
+  <Project Path="EX03/EX03.csproj" />
+  <Project Path="EX04/EX04.csproj" />
+  <Project Path="EX05/EX05.csproj" />
+  <Project Path="EX06/EX06.csproj" />
+  <Project Path="EX07/EX07.csproj" />
+  <Project Path="EX08/EX08.csproj" />
+  <Project Path="EX09/EX09.csproj" />
+  <Project Path="EX10/EX10.csproj" />
+  <Project Path="EX11/EX11.csproj" />
+</Solution>

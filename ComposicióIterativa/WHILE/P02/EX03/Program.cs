@@ -4,31 +4,32 @@
     {
         static void Main(string[] args)
         {
-            const int MARCA_DE_FI = 0;
             int contadorP = 0;
             int contadorN = 0;
+            
+            Console.WriteLine("Introduce numeros: (0 para acabar)");
+            int numeros = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Introduce un valor: (0 para terminar)");
-            int numeroActual = Convert.ToInt32(Console.ReadLine());
-
-            while (numeroActual != MARCA_DE_FI)
+            while (numeros != 0)
             {
-                if (numeroActual < 0)
+
+
+                if (numeros < 0)
                 {
                     contadorN++;
                 }
 
-                else
+                else if (numeros > 0)
                 {
                     contadorP++;
                 }
 
-                Console.WriteLine("Introduce un valor:");
-                numeroActual = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Introduce numeros: (0 para acabar)");
+                numeros = Convert.ToInt32(Console.ReadLine());
             }
 
-            Console.WriteLine($"Has introducido {contadorP} valores positivos, y {contadorN} valores negativos.");
-
+            Console.WriteLine($"Numeros Positivos: {contadorP}");
+            Console.WriteLine($"Numeros Negativos: {contadorN}");
         }
     }
 }

@@ -4,20 +4,21 @@
     {
         static void Main(string[] args)
         {
-            int contador = 0;
+            int contadorNumero = 0;
             
-            Console.WriteLine("Introdueix un numero");
-            int numero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introduce un numero");
+            int numero = Convert.ToInt32 (Console.ReadLine());
 
             while (numero != 0)
             {
-                contador++;
-                Console.WriteLine("Introdueix un numero");
+                contadorNumero++;
+
+                Console.WriteLine("Introduce un numero");
                 numero = Convert.ToInt32(Console.ReadLine());
+                
             }
 
-            Console.WriteLine($"Has introducido {contador} valores.");
-
+            Console.WriteLine($"El usuario a introducido {contadorNumero} numeros.");
         }
     }
 }

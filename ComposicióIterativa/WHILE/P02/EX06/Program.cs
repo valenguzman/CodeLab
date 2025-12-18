@@ -5,24 +5,34 @@
         static void Main(string[] args)
         {
             const string MARCA_DE_FI = null;
-            const string FITXER_NUMEROS = "NUMEROS2.TXT";
-            StreamReader fitxerNumeros = new StreamReader(FITXER_NUMEROS);
 
-            int sumaContador = 0;
-            int numeroContador = 0;
+            StreamReader numeros2 = new StreamReader ("NUMEROS2.TXT");
 
-            string lineaActual = fitxerNumeros.ReadLine();
+            int contadorSuma = 0;
+            int contadorNumeros = 0;
 
-            while (lineaActual != MARCA_DE_FI)
+            string linea = numeros2.ReadLine();
+
+            while (linea != MARCA_DE_FI)
             {
-                numeroContador++;
-                sumaContador = sumaContador + Convert.ToInt32(lineaActual);
+                contadorSuma += Convert.ToInt32(linea);
+                contadorNumeros++;
 
-                lineaActual = fitxerNumeros.ReadLine();
+                linea = numeros2.ReadLine();
             }
 
-            Console.WriteLine($"La mediana és {sumaContador / numeroContador}");
+            numeros2.Close();
 
+            int mediana = CalucarMediana(contadorNumeros, contadorSuma);
+
+            Console.WriteLine($"La mediana total és de: {mediana}");
+        }
+
+        private static int CalucarMediana(int contadorNumeros, int contadorSuma)
+        {
+            int mediana = contadorSuma / contadorNumeros;
+
+            return mediana;
         }
     }
 }

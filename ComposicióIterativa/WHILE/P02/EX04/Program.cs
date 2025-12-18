@@ -4,31 +4,36 @@
     {
         static void Main(string[] args)
         {
+            const string MARCA_DE_FI = null;
 
-            const string FITXER_NUMEROS = "NUMEROS.TXT";
-            StreamReader fitxerNumeros = new StreamReader(FITXER_NUMEROS);
+            int contadorPositius = 0;
+            int contadorNegaitius = 0;
 
-            int contadorP = 0;
-            int contadorN = 0;
+            StreamReader numeros = new StreamReader("NUMEROS.TXT");
 
-            string lineaActual = fitxerNumeros.ReadLine();
+            string linea = numeros.ReadLine();
 
-            while (lineaActual != null)
+            int lineaInt = Convert.ToInt32(linea);
+
+            while (linea != MARCA_DE_FI)
             {
-                if (Convert.ToInt32(lineaActual) < 0)
+                if (lineaInt < 0)
                 {
-                    contadorN++;
+                    contadorNegaitius++;
                 }
 
                 else
                 {
-                    contadorP++;
+                    contadorPositius++;
                 }
 
-                lineaActual = fitxerNumeros.ReadLine();
+                linea = numeros.ReadLine();
             }
 
-            Console.WriteLine($"Has introducido {contadorP} valores positivos, y {contadorN} valores negativos.");
+            numeros.Close();
+
+            Console.WriteLine($"Numeros positivos: {contadorPositius}");
+            Console.WriteLine($"Numeros negativos {contadorNegaitius}");
         }
     }
 }

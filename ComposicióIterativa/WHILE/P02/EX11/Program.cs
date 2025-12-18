@@ -8,49 +8,52 @@
 
             int a = rnd.Next(1, 101);
             int b = rnd.Next(1, 101);
-            int contadorOperacions = 0;
 
-            Console.WriteLine($"Intrudueix el resultat {a} + {b}:");
+            int contadorIntentos = 0;
+
+            Console.WriteLine($"Entra el resultat de la suma: {a} + {b}. ");
             int resultatSuma = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Intrudueix el resultat  {a} - {b}:");
+            Console.WriteLine($"Entra el resultat de la resta: {a} - {b}. ");
             int resultatResta = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Intrudueix el resultat d {a} * {b}:");
+            Console.WriteLine($"Entra el resultat del producte: {a} * {b}. ");
             int resultatProducte = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Intrudueix el resultat de {a}  / {b}:");
-            int resultatDividir = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Entra el resultat de la divisio: {a} / {b}. ");
+            int resultatDivisio = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("");
-            Console.WriteLine("Malament!");
-            Console.WriteLine("Torna a començar!");
-            Console.WriteLine("");
 
-            while (resultatSuma != a + b && resultatResta != a-b && resultatProducte != a*b && resultatDividir != a/b)
+            while (resultatSuma != a + b && resultatResta != a - b && resultatProducte != a * b && resultatDivisio != a / b)
             {
-                
-                contadorOperacions++;
-                
-                Console.WriteLine("Intrudueix el resultat de la suma:");
+                contadorIntentos++;
+
+                if (resultatSuma != a + b && resultatResta != a - b && resultatProducte != a * b && resultatDivisio != a / b)
+                {
+                    Console.WriteLine("¡Incorrecto!");
+                    Console.WriteLine("");
+                }
+
+                if (resultatSuma == a + b && resultatResta == a - b && resultatProducte == a * b && resultatDivisio == a / b)
+                {
+                    Console.WriteLine("¡Correcto!");
+                    Console.WriteLine("");
+                }
+
+                Console.WriteLine($"Entra el resultat de la suma: {a} + {b}. ");
                 resultatSuma = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Intrudueix el resultat de la resta:");
+                Console.WriteLine($"Entra el resultat de la resta: {a} - {b}. ");
                 resultatResta = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Intrudueix el resultat del producte:");
+                Console.WriteLine($"Entra el resultat del producte: {a} * {b}. ");
                 resultatProducte = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Intrudueix el resultat de la divisió:");
-                resultatDividir = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine("");
-                Console.WriteLine("Malament!");
-                Console.WriteLine("Torna a començar!");
-                Console.WriteLine("");
+                Console.WriteLine($"Entra el resultat de la divisio: {a} / {b}. ");
+                resultatDivisio = Convert.ToInt32(Console.ReadLine());
             }
 
-            Console.WriteLine($"Intents: {contadorOperacions}");
+            Console.WriteLine($"Numeros de intentos: {contadorIntentos}");
         }
     }
 }

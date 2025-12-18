@@ -4,22 +4,20 @@
     {
         static void Main(string[] args)
         {
-            int contadorXifres = 0;
+
+            int contador = 0;
             
-            Console.WriteLine("Introdueix un numero positiu:");
-            int numeroP = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introduce un valor positivo:");
+            int valor = Convert.ToInt32(Console.ReadLine());
 
-            while (numeroP != 0)
+            while (valor != 0)
             {
-                
-                contadorXifres++;
-
-                numeroP = numeroP / 10;
-
+                valor = valor / 10;
+                contador++;
             }
 
-            Console.WriteLine($"El teu numero té {contadorXifres} xifres.");
-
+            Console.WriteLine($"El numero tiene: {contador} cifras.");
+            
         }
     }
 }

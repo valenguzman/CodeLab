@@ -4,20 +4,24 @@
     {
         static void Main(string[] args)
         {
-            int contador = 0;
-            
-            const string FITXER_NUMEROS = "NUMEROS.TXT";
-            StreamReader fitxerNumeros = new StreamReader(FITXER_NUMEROS);
+            const string MARCA_DE_FI = null;
 
-             string lineaActual = fitxerNumeros.ReadLine();
+            StreamReader numeros = new StreamReader("NUMEROS.TXT");
 
-            while (lineaActual != null)
+            int contadorNumeros = 0;
+
+            string linea = numeros.ReadLine();
+
+
+            while (linea != MARCA_DE_FI)
             {
-                contador++;
-                lineaActual = fitxerNumeros.ReadLine();
+                linea = numeros.ReadLine();
+                contadorNumeros++;
             }
 
-            Console.WriteLine($"Hay {contador} valores.");
+            numeros.Close();
+
+            Console.WriteLine($"Cantidad de numeros: {contadorNumeros}");
         }
     }
 }
