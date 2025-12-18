@@ -10,4 +10,7 @@
   <Project Path="EX09/EX09.csproj" />
   <Project Path="EX10/EX10.csproj" />
   <Project Path="EX11/EX11.csproj" />
+  <Project Path="EX12/EX12.csproj" />
+  <Project Path="EX13/EX13.csproj" />
+  <Project Path="EX14/EX14.csproj" />
 </Solution>
