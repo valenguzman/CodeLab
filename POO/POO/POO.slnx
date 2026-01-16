@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Cadena Caracters/Cadena Caracters.csproj" />
+  <Project Path="POO/POO.csproj" />
+  <Project Path="Utilitats/Utilitats.csproj" />
+</Solution>
