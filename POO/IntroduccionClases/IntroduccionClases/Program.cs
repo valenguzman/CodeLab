@@ -6,12 +6,18 @@
         {
             //-----ejemplo 1 para aleix
 
-            //Cliente cliente = new Cliente("Valentin", "vgguzzman@gmail.com", "Carrer Llises", "629 20 41 41", 23);
+            Cliente cliente = new Cliente("Valentin", "vgguzzman@gmail.com", "Carrer Llises", "629 20 41 41", 23);
+
+            Console.WriteLine(cliente.MostrarInformacion());
 
             //Console.WriteLine(cliente.nombre);
+            
             //Console.WriteLine(cliente.email);
+            
             //Console.WriteLine(cliente.direccion);
+            
             //Console.WriteLine(cliente.telefono);
+            
             //Console.WriteLine(cliente.edad);
 
             //-----ejemplo 2 para aleix
@@ -39,13 +45,13 @@
             //------ejemplo 2 para aleix
 
 
-            List<int> numeros = new List<int> { 10, 20, 30, 40 };
+            //List<int> numeros = new List<int> { 10, 20, 30, 40 };
 
-            foreach (int numero in numeros)
-            {
-                Console.WriteLine(numero * 2);
+            //foreach (int numero in numeros)
+            //{
+            //    Console.WriteLine(numero * 2);
 
-            }
+            //}
         }
     }
 }
