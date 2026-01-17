@@ -6,12 +6,18 @@ namespace IntroduccionClases
 {
     public class Cliente
     {
+        #region propiedades
+
         public string nombre;
         public string email;
         public string direccion;
         public string telefono;
         public int edad;
 
+        #endregion
+
+
+        #region Constructor
         public Cliente()
         {
             nombre = "Por defecto";
@@ -27,5 +33,6 @@ namespace IntroduccionClases
 
         }
 
+        #endregion
     }
 }
