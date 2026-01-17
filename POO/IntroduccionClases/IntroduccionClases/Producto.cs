@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace IntroduccionClases
@@ -25,6 +26,20 @@ namespace IntroduccionClases
             this.precio = precio;
             this.stock = stock;
             this.disponible = disponible;
+        }
+
+        public string MostrarInformacionProducto()
+        {
+            string informacionProducto = ConcatenarInformacionProducto();
+
+            return informacionProducto;
+        }
+
+        public string ConcatenarInformacionProducto()
+        {
+            string informacionProducto = $"Nombre = {nombre} \n Categoria = {categoria}, Precio = {precio}, Stock = {stock}, Disponible = {disponible}";
+
+            return informacionProducto;
         }
     }
 }

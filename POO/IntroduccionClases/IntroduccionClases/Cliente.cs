@@ -35,25 +35,43 @@ namespace IntroduccionClases
 
         #endregion
 
+        //Metodo para mostrar la informacion con los otros metodos.
         public string MostrarInformacion()
         {
             string informacion = ConcatenarInformacion();
 
-            informacion = ConvertirMayus(informacion);
+            informacion = ConvertirMinus(informacion);
 
             return informacion;
+        }
+
+        public string MostrarInformacionPersonal()
+        {
+            string informacionPersonal = ConcatenarInformacionPersonal();
+
+            return informacionPersonal;
+        }
+
+        public string ConcatenarInformacionPersonal()
+        {
+            string informacionPersonal = $"Direccion/Telefono = {direccion} - {telefono}";
+
+            return informacionPersonal;
         }
 
         //Metodos para Concatenar y Convertir en Mayusculas
 
         private string ConcatenarInformacion()
         {
-            return $"Nombre/Email = {nombre} - {email}";
+           
+            string informacion = $"Nombre/Email = {nombre} - {email}";
+
+            return informacion;
         }
 
-        private string ConvertirMayus(string texto)
+        private string ConvertirMinus(string texto)
         {
-            return texto.ToUpper();
+            return texto.ToLower();
         }
     }
 }

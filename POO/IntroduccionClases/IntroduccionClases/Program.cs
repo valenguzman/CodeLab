@@ -4,31 +4,55 @@
     {
         static void Main(string[] args)
         {
-            //-----ejemplo 1 para aleix
+            //-----ejemplo 1 
 
-            Cliente cliente = new Cliente("Valentin", "vgguzzman@gmail.com", "Carrer Llises", "629 20 41 41", 23);
+            Cliente clienteValen = new Cliente("Valentin", "vgguzzman@gmail.com", "Carrer Llises", "629 20 41 41", 20);
 
-            Console.WriteLine(cliente.MostrarInformacion());
+            //Mostrando Informacion con Metodos (Recomendado)
 
-            //Console.WriteLine(cliente.nombre);
-            
-            //Console.WriteLine(cliente.email);
-            
-            //Console.WriteLine(cliente.direccion);
-            
-            //Console.WriteLine(cliente.telefono);
-            
-            //Console.WriteLine(cliente.edad);
+            Console.WriteLine("------------------------------------------------------------------");
 
-            //-----ejemplo 2 para aleix
+            Console.WriteLine("Cliente: Valen / " + clienteValen.MostrarInformacion());
 
-            //Producto producto = new Producto("Leche", "Lacteos", 1.20, 84, true);
+            Console.WriteLine("Cliente: Valen / " + clienteValen.MostrarInformacionPersonal());
 
-            //Console.WriteLine($"nombre = {producto.nombre}");
-            //Console.WriteLine($"categoria = {producto.categoria}");
-            //Console.WriteLine($"precio = {producto.precio}");
-            //Console.WriteLine($"stock = {producto.stock}");
-            //Console.WriteLine($"disponible = {producto.disponible}");
+            Console.WriteLine("------------------------------------------------------------------");
+
+            Cliente clienteAleix = new Cliente("Aleix", "Aleix@gmail.com", "Carrer Fortia", "629 20 41 51", 20);
+
+            Console.WriteLine("Cliente: Aleix / " + clienteAleix.MostrarInformacion());
+
+            Console.WriteLine("Cliente: Aleix / " + clienteAleix.MostrarInformacionPersonal());
+
+            Console.WriteLine("------------------------------------------------------------------");
+
+            //Mostrando inforamcion sin metodos (No Recomendado)
+
+            Console.WriteLine(clienteValen.nombre);
+
+            Console.WriteLine(clienteValen.email);
+
+            Console.WriteLine(clienteValen.direccion);
+
+            Console.WriteLine(clienteValen.telefono);
+
+            Console.WriteLine(clienteValen.edad);
+
+            //-----ejemplo 2 
+
+            Console.WriteLine("------------------------------------------------------------------");
+
+            Producto producto = new Producto("Leche", "Lacteos", 1.20, 84, true);
+
+            Console.WriteLine(producto.MostrarInformacionProducto());
+
+            Console.WriteLine("------------------------------------------------------------------");
+
+            Console.WriteLine($"nombre = {producto.nombre}");
+            Console.WriteLine($"categoria = {producto.categoria}");
+            Console.WriteLine($"precio = {producto.precio}");
+            Console.WriteLine($"stock = {producto.stock}");
+            Console.WriteLine($"disponible = {producto.disponible}");
 
 
             //------ejemplo 1 para aleix
