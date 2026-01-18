@@ -8,11 +8,53 @@ namespace IntroduccionClases
     {
         #region propiedades
 
-        public string nombre;
-        public string email;
-        public string direccion;
-        public string telefono;
-        public int edad;
+        //public string nombre;
+        //public string email;
+        //public string direccion;
+        //public string telefono;
+        //public int edad;
+
+        private string nombre;
+
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+
+        private string email;
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+
+        private string direccion;
+
+        public string Direccion
+        {
+            get { return direccion; }
+            set { direccion = value; }
+        }
+
+        private string telefono;
+
+        public string Telefono
+        {
+            get { return telefono; }
+            set { telefono = value; }
+        }
+
+        private int edad;
+
+        public int Edad
+        {
+            get { return edad; }
+            set { edad = value; }
+        }
+
+
 
         #endregion
 
@@ -34,6 +76,9 @@ namespace IntroduccionClases
         }
 
         #endregion
+
+
+        #region Metodos
 
         //Metodo para mostrar la informacion con los otros metodos.
         public string MostrarInformacion()
@@ -73,5 +118,7 @@ namespace IntroduccionClases
         {
             return texto.ToLower();
         }
+
+        #endregion
     }
 }

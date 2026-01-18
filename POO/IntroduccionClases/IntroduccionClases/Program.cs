@@ -18,15 +18,8 @@
 
             Console.WriteLine("------------------------------------------------------------------");
 
-            Cliente clienteAleix = new Cliente("Aleix", "Aleix@gmail.com", "Carrer Fortia", "629 20 41 51", 20);
 
-            Console.WriteLine("Cliente: Aleix / " + clienteAleix.MostrarInformacion());
-
-            Console.WriteLine("Cliente: Aleix / " + clienteAleix.MostrarInformacionPersonal());
-
-            Console.WriteLine("------------------------------------------------------------------");
-
-            //Mostrando inforamcion sin metodos (No Recomendado)
+            //Mostrando inforamcion sin metodos (No Recomendado) (No funciona por la declaracion de las propiedades).
 
             Console.WriteLine(clienteValen.nombre);
 
@@ -40,6 +33,8 @@
 
             //-----ejemplo 2 
 
+            //Mostrando Informacion con Metodos (Recomendado)
+
             Console.WriteLine("------------------------------------------------------------------");
 
             Producto producto = new Producto("Leche", "Lacteos", 1.20, 84, true);
@@ -48,20 +43,36 @@
 
             Console.WriteLine("------------------------------------------------------------------");
 
-            Console.WriteLine($"nombre = {producto.nombre}");
-            Console.WriteLine($"categoria = {producto.categoria}");
-            Console.WriteLine($"precio = {producto.precio}");
-            Console.WriteLine($"stock = {producto.stock}");
-            Console.WriteLine($"disponible = {producto.disponible}");
+            //Mostrando inforamcion sin metodos (No Recomendado)
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine(producto.nombre);
+            Console.WriteLine(producto.categoria);
+            Console.WriteLine(producto.precio);
+            Console.WriteLine(producto.stock);
+            Console.WriteLine(producto.disponible);
 
+            Console.WriteLine("------------------------------------------------------------------");
+
+
+            //// Empresa
+
+            //Primera forma de crear un objeto.
+
+            Empresa empresa = new Empresa()
+            {
+                Nombre = "ValuuwCorp",
+                Email = "valuuw@gmail.com",
+                Telefono = "231312312",
+                Direccion = "Carrer Llises",
+            };
+
+            //Segunda forma de crear un objeto.
+
+            Empresa empresa2 = new Empresa("12334434432232","ValuuwCorp", "valuuw@gmail.com","629 20 41 41","Carrer Llises");
+
+            //Mostrar por pantalla.
+
+            Console.WriteLine(empresa.MostrarInformacion());
         }
     }
 }
