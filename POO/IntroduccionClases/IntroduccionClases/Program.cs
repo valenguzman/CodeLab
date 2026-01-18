@@ -54,28 +54,14 @@
             Console.WriteLine($"stock = {producto.stock}");
             Console.WriteLine($"disponible = {producto.disponible}");
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
 
-            //------ejemplo 1 para aleix
-
-
-            //string[] nombres = { "Ana", "Luis", "María", "Carlos" };
-
-            //foreach (string nombre in nombres)
-            //{
-            //    Console.WriteLine(nombre);
-            //}
-
-
-            //------ejemplo 2 para aleix
-
-
-            //List<int> numeros = new List<int> { 10, 20, 30, 40 };
-
-            //foreach (int numero in numeros)
-            //{
-            //    Console.WriteLine(numero * 2);
-
-            //}
         }
     }
 }
