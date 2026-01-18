@@ -9,19 +9,19 @@ namespace IntroduccionClases
 
         #region Propiedades
 
-        //Primera forma de crear propiedades.(prop)
+        //Primera forma de definir propiedades.(prop)
 
         public string NIF { get; } = "PIXXX123";
 
-        public string Nombre { get; set; } = string.Empty;
+        public string Nombre { get; set; } = string.Empty; //getters para obtener, setter para modificar.
 
-        public string Email { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty; //getters para obtener, setter para modificar.
 
-        public string Direccion { get; set; } = string.Empty;
+        public string Direccion { get; set; } = string.Empty; //getters para obtener, setter para modificar.
 
-        public string Telefono { get; set; } = string.Empty;
+        public string Telefono { get; set; } = string.Empty; //getters para obtener, setter para modificar.
 
-        //Segunda forma de crear propiedades.(propfull)
+        //Segunda forma de definir propiedades.(propfull)
 
         private string nombre2;
 
