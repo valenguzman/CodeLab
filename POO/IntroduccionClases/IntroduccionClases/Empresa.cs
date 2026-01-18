@@ -7,7 +7,7 @@ namespace IntroduccionClases
     internal class Empresa
     {
 
-        #region Propiedades
+        #region ---Propiedades 
 
         //Primera forma de definir propiedades.(prop)
 
@@ -33,7 +33,7 @@ namespace IntroduccionClases
 
         #endregion
 
-        #region Contructores
+        #region ---Contructores
 
         public Empresa()
         {
@@ -51,7 +51,7 @@ namespace IntroduccionClases
 
         #endregion
 
-        #region Metodos
+        #region ---Metodos
 
         public string MostrarInformacion()
         {

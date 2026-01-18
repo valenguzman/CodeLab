@@ -4,54 +4,54 @@
     {
         static void Main(string[] args)
         {
-            //-----ejemplo 1 
+            ////-----ejemplo 1 
 
-            Cliente clienteValen = new Cliente("Valentin", "vgguzzman@gmail.com", "Carrer Llises", "629 20 41 41", 20);
+            //Cliente clienteValen = new Cliente("Valentin", "vgguzzman@gmail.com", "Carrer Llises", "629 20 41 41", 20);
 
-            //Mostrando Informacion con Metodos (Recomendado)
+            ////Mostrando Informacion con Metodos (Recomendado)
 
-            Console.WriteLine("------------------------------------------------------------------");
+            //Console.WriteLine("------------------------------------------------------------------");
 
-            Console.WriteLine("Cliente: Valen / " + clienteValen.MostrarInformacion());
+            //Console.WriteLine("Cliente: Valen / " + clienteValen.MostrarInformacion());
 
-            Console.WriteLine("Cliente: Valen / " + clienteValen.MostrarInformacionPersonal());
+            //Console.WriteLine("Cliente: Valen / " + clienteValen.MostrarInformacionPersonal());
 
-            Console.WriteLine("------------------------------------------------------------------");
+            //Console.WriteLine("------------------------------------------------------------------");
 
 
-            //Mostrando inforamcion sin metodos (No Recomendado) (No funciona por la declaracion de las propiedades).
+            ////Mostrando inforamcion sin metodos (No Recomendado) (No funciona por la declaracion de las propiedades).
 
-            Console.WriteLine(clienteValen.nombre);
+            //Console.WriteLine(clienteValen.nombre);
 
-            Console.WriteLine(clienteValen.email);
+            //Console.WriteLine(clienteValen.email);
 
-            Console.WriteLine(clienteValen.direccion);
+            //Console.WriteLine(clienteValen.direccion);
 
-            Console.WriteLine(clienteValen.telefono);
+            //Console.WriteLine(clienteValen.telefono);
 
-            Console.WriteLine(clienteValen.edad);
+            //Console.WriteLine(clienteValen.edad);
 
-            //-----ejemplo 2 
+            ////-----ejemplo 2 
 
-            //Mostrando Informacion con Metodos (Recomendado)
+            ////Mostrando Informacion con Metodos (Recomendado)
 
-            Console.WriteLine("------------------------------------------------------------------");
+            //Console.WriteLine("------------------------------------------------------------------");
 
-            Producto producto = new Producto("Leche", "Lacteos", 1.20, 84, true);
+            //Producto producto = new Producto("Leche", "Lacteos", 1.20, 84, true);
 
-            Console.WriteLine(producto.MostrarInformacionProducto());
+            //Console.WriteLine(producto.MostrarInformacionProducto());
 
-            Console.WriteLine("------------------------------------------------------------------");
+            //Console.WriteLine("------------------------------------------------------------------");
 
-            //Mostrando inforamcion sin metodos (No Recomendado)
+            ////Mostrando inforamcion sin metodos (No Recomendado)
 
-            Console.WriteLine(producto.nombre);
-            Console.WriteLine(producto.categoria);
-            Console.WriteLine(producto.precio);
-            Console.WriteLine(producto.stock);
-            Console.WriteLine(producto.disponible);
+            //Console.WriteLine(producto.nombre);
+            //Console.WriteLine(producto.categoria);
+            //Console.WriteLine(producto.precio);
+            //Console.WriteLine(producto.stock);
+            //Console.WriteLine(producto.disponible);
 
-            Console.WriteLine("------------------------------------------------------------------");
+            //Console.WriteLine("------------------------------------------------------------------");
 
 
             //// Empresa
@@ -73,6 +73,8 @@
             //Mostrar por pantalla.
 
             Console.WriteLine(empresa.MostrarInformacion());
+            Console.WriteLine(empresa.Nombre);
+
         }
     }
 }
